@@ -530,15 +530,19 @@ var navbarInit = function navbarInit() {
         });
     }
     var navbarNav = document.querySelector('[data-navbar-nav]');
-    navbarNav.addEventListener('click', function(event) {
-        if (event.target.closest('li')) {
-            var navbarToggler = document.querySelector('[data-bs-toggle]');
-            var navbarItemContainer = document.querySelector('[data-navbar-collapse]');
-            navbarToggler.setAttribute('aria-expanded', false);
-            navbarItemContainer.classList.remove('show');
-            navbarToggler.classList.add('collapsed');
-        }
-    });
+    if (navbarNav) {
+        navbarNav.addEventListener('click', function(event) {
+            if (event.target.closest('li')) {
+                var navbarToggler = document.querySelector('[data-bs-toggle], [data-nav-toggle]');
+                var navbarItemContainer = document.querySelector('[data-navbar-collapse]');
+                if (navbarToggler) {
+                    navbarToggler.setAttribute('aria-expanded', 'false');
+                    navbarToggler.classList.add('collapsed');
+                }
+                if (navbarItemContainer) navbarItemContainer.classList.remove('show');
+            }
+        });
+    }
 };
 
 /*-----------------------------------------------

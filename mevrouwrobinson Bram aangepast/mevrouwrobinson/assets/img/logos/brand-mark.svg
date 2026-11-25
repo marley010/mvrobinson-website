@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="68" viewBox="0 0 270 68" fill="none">
+  <rect x="2" y="5" width="58" height="58" rx="19" fill="#24483D"/>
+  <path d="M17 46V22h6l8 13 8-13h6v24h-7V33l-7 11-7-11v13h-7Z" fill="#fff"/>
+  <circle cx="49" cy="15" r="5" fill="#D99A70"/>
+  <text x="73" y="31" fill="#24483D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" letter-spacing="1.1">STICHTING</text>
+  <text x="72" y="54" fill="#24483D" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing=".1">MEVROUW ROBINSON</text>
+</svg>
